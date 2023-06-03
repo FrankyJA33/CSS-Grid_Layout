@@ -1,0 +1,153 @@
+.wrapper {
+    display: grid; /*Esta propiedad debe de ir siempre en el PADRE para poder usas CSS grid layoud*/
+        /* repeat(num.columnas, tamaño de la celda) */
+    grid-template-columns: repeat(3, 1fr); /*Crea columnas de grillas, y esto tambien pertenece al PADRE*/
+        /* 1fr es una fraccion del tamaño del contenedor */
+    grid-gap: 5px; /*Espacio entre grillas*/
+    font-family: 'Lato', sans-serif;
+    width: 550px;
+}
+
+.container {
+  background: turquoise;
+  width: 180px;
+  height: 180px;
+  position: relative;
+}
+
+.element {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.element1 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  position: absolute; /* Si el elemento hijo tendra un position: absolute entonces el padre tendra un position: relative */
+  left: 0;
+  top: 0;
+}
+
+.element2 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  position: absolute;
+  left: 0;
+  top: 50%;
+          /* transform(x, y) */
+  transform: translate(0, -50%);
+
+  /* 
+  Los valores que recibe la función translate se calculan con base en el tamaño del elemento. Esto significa que si el elemento tiene un width de 60px, entonces transform: translate(-60px, 0).
+  Aplica de igual forma para el eje Y con respecto al height.
+  */
+}
+
+.element3 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0, -100%);
+}
+
+.element4 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.element5 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.element6 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+
+.element7 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%, 0);
+}
+
+.element8 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+.element9 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-100%, -100%);
+}

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Lobster', cursive;
+    background: rgb(200,129,13);
+    background: linear-gradient(45deg, rgba(200,129,13,1) 24%, rgba(250,193,32,1) 100%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    height: 70vh;
+    grid-template-areas: 
+    "one two null four four five"
+    "three three null four four six";
+    gap: 10px;
+} 
+
+.item1 {
+    width: 200px;
+    height: 300px;
+    background-image: url(../Assets/rick.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: one;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}
+
+.item2 {
+    width: 200px;
+    height: 300px;
+    background-image: url(../Assets/morty.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: two;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}
+
+.item3 {
+    width: 400px;
+    height: 250px;
+    background-image: url(../Assets/yeah.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: three;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}
+
+.item4 {
+    width: 400px;
+    height: 100%;
+    background-image: url(../Assets/yeah2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: four;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}
+
+.item5 {
+    width: 200px;
+    height: 100%;
+    background-image: url(../Assets/rick2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: five;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}
+
+.item6 {
+    width: 200px;
+    height: 100%;
+    background-image: url(../Assets/morty2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    grid-area: six;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.52);
+}

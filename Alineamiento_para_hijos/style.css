@@ -1,0 +1,23 @@
+.container {
+    background: papayawhip;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 200px;
+    height: 200px;
+  }
+  
+  .item:nth-child(1) { /*:nth-child(1) -> El primer hijo de container tendra las propiedades de adentro*/
+    background: hotpink;
+    place-self: center stretch;
+    /*
+                V      H
+    place-self: center stretch; es un equivalente a:
+    justify-self: stretch;
+    align-self: center;
+    Y este es un metodo de alineacion para los elementos hijos
+    */
+  }
+  
+  .item:not(:nth-child(1)) { /* :not(:nth-child(1)) -> todos los hijos de container menos el 1 tendran las propiedades de adentro*/
+    background: turquoise;
+  }

@@ -1,0 +1,20 @@
+.card {
+    background: #ffdada;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden; /*El contenido es recortado y no se muestran barras de posición.*/
+    /* Ver en MDN Reference las siguientes dos propiedades */
+    /*direction: rtl;
+    writing-mode: vertical-rl; */
+  }
+  
+  .card__header {
+    background: #dbf6e9;
+    padding: 20px;
+  }
+  
+  .card__main {
+    background: #9ddfd3;
+    padding: 20px;
+  }

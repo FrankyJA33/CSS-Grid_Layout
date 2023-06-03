@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px dotted #FFA000;
+    width: 50vw;
+    height: 80vh;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(2, 150px)/repeat(2, 150px);
+    width: 70vw;
+    height: 70vh;
+    gap: 5px;
+    place-content: center;
+    /*
+    place-content: <align-content> / <justify-content>; es un equivalente a:
+        align-content: center;
+        justify-content: center;
+
+    tambien existe place-items
+    */
+    grid-auto-flow: column;   /* Agrega automaticamente columnas */
+    grid-auto-flow: row;      /* Agrega automaticamente Filas */
+    grid-auto-columns: 100px; /* Define el tamaño de columnasa que se agregaran automaticamente*/
+    grid-auto-rows: 100px;    /* Define el tamaño de las filas que se agregaran automaticamente */
+}
+
+.item {
+    display: flex;
+    background: rgb(174,233,238);
+    background: radial-gradient(circle, rgba(174,233,238,1) 30%, rgba(148,187,233,1) 100%);
+    justify-content: center;
+    align-items: center;
+
+    /*
+                LI/LF --> linea de inicio/linea final
+    grid-column: 1/2;   Crea una columna de la linea 1 a la line 2
+             LI/LF --> linea de inicio/linea final
+    grid-row: 2/3       Crea una fila de la linea 2 a la linea 3
+    */
+}
+
+.itemh {
+    width: 60%;
+    height: 60%;
+    background: rgb(195,34,173);
+    background: linear-gradient(0deg, rgba(195,34,173,1) 27%, rgba(253,187,45,1) 100%);
+}

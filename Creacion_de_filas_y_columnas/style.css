@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    /*grid-template: filas/columnas;*/
+    grid-template: repeat(5, 50px) / repeat(5, 50px);
+    /*Con grid-template podemos ahorrarnos: 
+     1.- grid-template-rows 
+     2.- grid-template-columns*/
+    
+     gap: 2px; /* Espaciado entre filas y columnas*/
+     /*Con gap podemos ahorrarnos: 
+     1.- row-gap
+     2.- column-gap
+     */
+    grid-template-areas: /* Con esto le asignamos nombre a cada area de la grilla*/
+        "header header header header  header"
+        "header header header header  header"
+        "main   main   p      sidebar sidebar"
+        "main   main   p      sidebar sidebar"
+        "footer footer footer footer  footer"
+    ;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    font-family: 'Lobster', cursive;
+  }
+
+  .container .h {
+    background: #2A427E;
+    grid-area: header; /*grid-area: Va de la mano con grid-template-areas, y se usa para poder unificar las grillas con ese nombre de area*/
+  }
+
+  .container .m {
+    background: #A794DB;
+    grid-area: main;
+  }
+
+  .container .p {
+      background: #D98E8C;
+      grid-area: p;
+  }
+
+  .container .s {
+    background: #6E89CF;
+    grid-area: sidebar;
+  }
+
+  .container .f {
+      background: #A3E0D8;
+      grid-area: footer;
+  }

@@ -1,0 +1,167 @@
+.wrapper {
+  display: grid; /*Esta propiedad debe de ir siempre en el PADRE para poder usas CSS grid layoud*/
+                      /* repeat(num.columnas, tamaño de la celda) */
+  grid-template-columns: repeat(3, 1fr); /*Crea columnas de grillas, y esto tambien pertenece al PADRE*/
+                      /* 1fr es una fraccion del tamaño del contenedor */
+  grid-gap: 5px; /*Espacio entre grillas*/
+  font-family: 'Lato', sans-serif;
+  width: 550px;
+}
+
+.container {
+  background: turquoise;
+  width: 180px;
+  height: 180px;
+}
+
+.element {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.container1 {
+  background: turquoise;
+  width: 180px;
+  height: 180px;
+
+  text-align: left;
+  line-height: 180px;
+}
+
+.element1 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  display: inline-block;
+  line-height: 45px;
+  vertical-align: top;
+}
+
+.element2 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.element3 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: papayawhip;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: bottom;
+}
+
+.container2 {
+  background: turquoise;
+  width: 180px;
+  height: 180px; 
+
+  text-align: center;
+  line-height: 180px;
+}
+
+.element4 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.element5 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.element6 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: pink;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: bottom;
+}
+
+.container3 {
+  background: turquoise;
+  width: 180px;
+  height: 180px;
+
+  text-align: right;
+  line-height: 180px;
+}
+
+.element7 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.element8 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.element9 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: lightcyan;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: bottom;
+}

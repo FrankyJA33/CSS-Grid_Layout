@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+  }
+
+.container {
+    background: #7fb069;
+    display: grid;
+    /*minmax(tamaño_MIN_de_la_celda, tamaño_MAX_de_la_celda)*/
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+                                /*auto-fit: exparse por todo el tamaño disponible las columnas de forma equitativa*/
+    /*grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));*/
+                                /*auto-fill: LLENA la fila con tantas columnas como puedan caber, pero solo muestra las que se tienen*/
+  }
+  
+  .item {
+    border: 4px solid rgb(230, 170, 104);
+    width: 100%;
+    height: 100px;
+  }
+
+  .container2 {
+      margin-top: 50px;
+      background: #FB020B;
+      display: grid;
+      grid-template-columns: auto fit-content(800px) auto;
+                              /*fit-content: organiza un contenido en especifico el cual lo reserva y el resto seria auto.*/
+  }
+
+  .container2 .h {
+      border: 4px solid #AC8788;
+      height: 100px;
+      text-align: center;
+  } 
+/*
+Con la función de auto-fit() ADAPTA las columnas DISPONIBLES ACTUALMENTE en el espacio expandiéndolas para que ocupen cualquier espacio disponible. El navegador hace eso después de LLENAR ese espacio adicional con columnas adicionales (como con el autocompletar) y luego colapsar las vacías.
+|
+Con la función de auto-fill() LLENA la fila con tantas columnas como pueda caber. Por lo tanto, crea columnas implícitas cada vez que cabe una nueva columna, porque está tratando de LLENAR la fila con tantas columnas como sea posible. Las columnas recién agregadas pueden estar vacías, pero seguirán ocupando un espacio designado en la fila.
+Estas funciones con perfectas para el responsive design.
+*/
+  
+  
